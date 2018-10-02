@@ -1,19 +1,27 @@
 // Get IE or Edge browser version
+
 var version = detectIE();
+var x = document.getElementsByClassName("inner");
+var y = document.getElementsByClassName("clock-container");
 
 if (version === false) {
-    var x = document.getElementsByClassName("inner");
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].classList.add("inset-shadow");
     }
-} else {
-    var x = document.getElementsByClassName("inner");
     var i;
     for (i = 0; i < x.length; i++) {
-        x[i].classList.remove("inset-shadow");
+        y[i].classList.add("inset-shadow");
     }
-
+} else {
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.add("alt-shadow");
+    }
+    var i;
+    for (i = 0; i < x.length; i++) {
+        y[i].classList.add("alt-shadow");
+    }
 }
 
 /**
@@ -23,8 +31,6 @@ if (version === false) {
 
 function detectIE() {
     var ua = window.navigator.userAgent;
-
-
     var msie = ua.indexOf("MSIE ");
     if (msie > 0) {
         // IE 10 or older => return version number
