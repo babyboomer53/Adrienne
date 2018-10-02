@@ -107,19 +107,31 @@ body {
     z-index: 15;
 }
 
-.inset-shadow {
-    color: rgba(0, 0, 0, 0.3);
-    background: #8C2633;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4), 0 0 0 rgba(0, 0, 0, 0.5);
+
+.clock-container.inset-shadow {
+    color: transparent;
+    background: Gray;
+    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
-/*
-.inset-shadow {
-    color: Transparent;
+header .inset-shadow {
+    color: transparent;
     background: #8C2633;
     text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
 }
-*/
+
+.clock-container.alt-shadow {
+    color: rgba(0, 0, 0, 0.4);
+    background: Gray;
+    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+header .alt-shadow {
+    color: rgba(0, 0, 0, 0.5);
+    background: #8C2633;
+    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
 header {
     width: 100%;
     font-family: Helvetica, Helvetica, Arial;
@@ -165,6 +177,7 @@ header {
 
 .small-header,
 .large-header {
+
     margin-top: 70px;
 }
 
@@ -172,6 +185,17 @@ header {
 .small-header .secondary-photo {
     width: 185px;
     border-radius: 6px;
+}
+
+.small-header .inner>div {
+    padding: 0;
+    margin: 0;
+}
+
+
+.small-header .inner>div>h1 {
+    padding: 0;
+    margin: 0;
 }
 
 #sticky-container {
@@ -395,11 +419,11 @@ header {
 
 #cv-button {
     position: fixed;
-    right: 20%;
-    top: 300px;
+    right: 380px;
+    top: 320px;
     color: Lightgray;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
     padding: 0.5rem;
     border-radius: 4px;
     -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.7);
@@ -684,7 +708,7 @@ header {
     display: flex;
     color: Black;
     padding: 4rem;
-    margin-top: 166px;
+    margin-top: 134px;
     font-family: 'Comic Sans MS', 'Architects Daughter';
     font-family: Times, Serif
 }
@@ -1020,9 +1044,6 @@ header {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-    color: rgba(0, 0, 0, 0.3);
-    background: Gray;
-    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 #diffuser {
