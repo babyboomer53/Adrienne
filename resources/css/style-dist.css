@@ -214,7 +214,7 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 12.5%;
+    width: 11.11%;
     height: 70px;
     font-size: 1.125rem;
 }
@@ -751,11 +751,26 @@ header {
 }
 
 #YourMentalHealth #adult-content>div>div>p:nth-of-type(n) {
-
     font-size: 1.25rem;
     text-align: justify;
     text-indent: 3rem;
     margin-bottom: 2rem;
+}
+
+#RadioShow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #F1E6B2;
+    height: 768px;
+}
+
+#RadioShow .content-container {}
+
+#RadioShow .content-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #YouthMentalHealth {
