@@ -196,7 +196,7 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 12.5%;
+    width: 11.11%;
     height: 70px;
     font-size: 1.125rem;
 }
@@ -667,11 +667,30 @@ header {
 }
 
 #YourMentalHealth #adult-content>div>div>p:nth-of-type(n) {
-
     font-size: 1.25rem;
     text-align: justify;
     text-indent: 3rem;
     margin-bottom: 2rem;
+}
+
+#RadioShow {
+    display: flex;
+    background-color: #F1E6B2;
+    
+}
+
+#RadioShow .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.audio-container {
+    min-width: 33%;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+    background-color: #85714d;
 }
 
 #YouthMentalHealth {
