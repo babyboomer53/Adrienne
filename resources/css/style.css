@@ -2,7 +2,6 @@ html {
     font-size: 16px;
 }
 
-
 :root {
     --BlueSky: #77A9CC;
     --Burgundy: #8c2633;
@@ -15,7 +14,6 @@ html {
     --medium-resolution: 1366px;
     --high-resolution: 1920px;
 }
-
 
 @font-face {
     font-family: 'Comic Sans MS';
@@ -159,7 +157,6 @@ header {
 
 .small-header,
 .large-header {
-
     margin-top: 70px;
 }
 
@@ -196,7 +193,7 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 11.11%;
+    width: 11.115%;
     height: 70px;
     font-size: 1.125rem;
 }
