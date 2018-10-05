@@ -385,6 +385,13 @@ header {
     background-color: #f1e6b2;
 }
 
+#clinical-content > div {
+    background-color: #85714d;
+    padding: 1rem;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+}
+
 #clinical-content {
     flex-direction: column;
     font-family: 'Comic Sans MS', 'Architects Daughter';
@@ -392,6 +399,7 @@ header {
     margin: 0 auto;
     margin-top: 250px;
     margin-bottom: 250px;
+    padding: 1rem;
 }
 
 #clinical-content h2 {
@@ -500,6 +508,9 @@ header {
     align-items: center;
     background-color: #85714d;
     margin-right: 1rem;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+
 }
 
 #specialized-content #forensic img {
@@ -544,6 +555,8 @@ header {
     align-items: center;
     background-color: #85714d;
     margin-right: 1rem;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 
 }
 
@@ -575,6 +588,9 @@ header {
     align-items: center;
     Width: 30%;
     background-color: #85714d;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+
 }
 
 #specialized-content #consultation h3 {
@@ -737,7 +753,9 @@ header {
     text-align: justify;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #85714D
+    background-color: #85714D;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 }
 
 #YouthMentalHealth #juvenile-content-container #preparing-for-college img {
@@ -784,9 +802,16 @@ header {
     margin: 0 auto;
     padding: 2rem;
     margin-right: 2rem;
-    background-color: #85714D
+    background-color: #85714D;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 }
-
+/*
+#YouthMentalHealth #juvenile-content-container #avoiding-detention:hover {
+    background-color: white;
+    cursor: pointer;
+}
+*/
 #YouthMentalHealth #juvenile-content-container #avoiding-detention img {
     width: 400px;
     height: auto;
