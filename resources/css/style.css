@@ -382,7 +382,7 @@ header {
     background-color: #f1e6b2;
 }
 
-#clinical-content > div {
+#clinical-content>div {
     background-color: #85714d;
     padding: 1rem;
     box-shadow: 4px 4px 15px 2px black;
@@ -692,7 +692,6 @@ header {
 #RadioShow {
     display: flex;
     background-color: #F1E6B2;
-    
 }
 
 #RadioShow .content-container {
@@ -700,6 +699,14 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
+}
+
+#RadioShow>div>div>div img {
+    transition: background-color linear 500ms;
+}
+
+#RadioShow>div>div>div img:hover {
+    background-color: white;
 }
 
 .audio-container {
@@ -712,7 +719,9 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 16px;
-    padding: 10px;"
+    padding: 10px;
+    "
+
 }
 
 .audio-container h3 {
@@ -806,6 +815,7 @@ header {
     box-shadow: 4px 4px 15px 2px black;
     border-radius: 8px;
 }
+
 /*
 #YouthMentalHealth #juvenile-content-container #avoiding-detention:hover {
     background-color: white;
