@@ -574,6 +574,10 @@ header {
     margin-top: 1rem;
 }
 
+.hover-box {
+    transition: color linear 500ms, background-color linear 500ms;
+}
+
 #specialized-content #presentations .hover-box:hover {
     background-color: white;
 }
