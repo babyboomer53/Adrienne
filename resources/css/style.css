@@ -364,9 +364,10 @@ header {
 }
 
 #cv-button {
-    position: fixed;
-    right: 15px;
-    top: 250px;
+    position: absolute;
+    right: 4rem;
+    top: -50px;
+    width: 200px;
     color: Lightgray;
     background-color: black;
     opacity: 0.5;
