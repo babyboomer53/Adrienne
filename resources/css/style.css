@@ -740,6 +740,10 @@ header {
     text-indent: 2rem;
 }
 
+.audio-container img {
+    border-radius: 4px;
+}
+
 #YouthMentalHealth {
     display: flex;
     flex-direction: column;
@@ -993,9 +997,15 @@ header {
 }
 
 .clock-container h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+}
+
+#copyright-notice {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 2rem;
 }
 
 #diffuser {
