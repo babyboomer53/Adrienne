@@ -698,8 +698,34 @@ header {
 #RadioShow .content-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    width: 100%;
+    padding: 4rem;
+    margin-top: 155px;
+}
+
+#RadioShow .content-container>h3 {
+    /*font-family: 'Comic Sans MS', 'Architects Daughter';*/
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+#RadioShow .content-container>p {
+    font-family: Times, serif;
+    font-size: 1.25rem;
+    color: black;
+    text-align: justify;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+}
+
+#RadioShow .content-container>p a {
+    color: #8c2633;
 }
 
 #RadioShow>div>div>div img {
@@ -721,13 +747,12 @@ header {
     align-items: center;
     margin: 16px;
     padding: 10px;
-    "
-
 }
 
 .audio-container h3 {
     text-align: center;
     color: black;
+    color:#f1e6b2;
     font-size: 1.25rem;
 }
 
@@ -982,7 +1007,6 @@ header {
 
 #contact-container #contact-text a {
     color: #F1E6B2;
-
 }
 
 .clock-container {
@@ -994,6 +1018,11 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     z-index: 50;
+}
+
+.clock-container a {
+    text-decoration: none;
+    Color: inherit;
 }
 
 .clock-container h2 {
