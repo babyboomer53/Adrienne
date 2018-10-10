@@ -100,7 +100,7 @@ body {
 .clock-container.inset-shadow {
     color: transparent;
     background: Gray;
-    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
+    text-shadow: rgba(255, 255, 255, 0.3) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 header .inset-shadow {
@@ -1020,19 +1020,14 @@ header {
     z-index: 50;
 }
 
-.clock-container a {
-    text-decoration: none;
-    Color: inherit;
-}
-
 .clock-container h2 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 300;
     margin: 0;
 }
 
-#copyright-notice {
-    font-size: 1.5rem;
+footer > a {
+    color: inherit;
     line-height: 2rem;
     margin-left: 2rem;
 }
