@@ -946,7 +946,6 @@ header {
 #Contact #contact-container #provisional-text {
     font-family: 'Comic Sans MS', 'Architects Daughter';
     color: #F1E6B2;
-
     font-size: 1.25rem;
     position: absolute;
     top: 100px;
@@ -955,7 +954,6 @@ header {
     background-color: rgba(52, 123, 33, 0.0);
     padding: 1rem;
     border-radius: 4px;
-
 }
 
 #Contact #contact-container #contact-text {
@@ -1023,13 +1021,16 @@ header {
 .clock-container h2 {
     font-size: 1.5rem;
     font-weight: 300;
-    margin: 0;
 }
 
 footer > a {
     color: inherit;
     line-height: 2rem;
     margin-left: 2rem;
+}
+
+footer > div > h2 {
+    margin-right: 0.25rem;
 }
 
 #diffuser {
