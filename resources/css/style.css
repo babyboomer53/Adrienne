@@ -60,19 +60,19 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    width: 1368px;
+    width: 1366px;
     margin: 0 auto;
 }
 
 .block-container {
     display: Block;
-    width: 1368px;
+    width: 1366px;
     color: black;
 }
 
 .flex-container {
     display: flex;
-    width: 1368px;
+    width: 1366px;
     margin: 0 auto;
 }
 
