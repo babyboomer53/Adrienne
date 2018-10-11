@@ -60,19 +60,19 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    width: 1366px;
+    width: 1368px;
     margin: 0 auto;
 }
 
 .block-container {
     display: Block;
-    width: 1366px;
+    width: 1368px;
     color: black;
 }
 
 .flex-container {
     display: flex;
-    width: 1366px;
+    width: 1368px;
     margin: 0 auto;
 }
 
@@ -193,7 +193,7 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 12.5%;
+    width: 11.11%;
     height: 70px;
     font-size: 1.125rem;
 }
