@@ -2,7 +2,6 @@ html {
     font-size: 16px;
 }
 
-
 :root {
     --BlueSky: #77A9CC;
     --Burgundy: #8c2633;
@@ -15,7 +14,6 @@ html {
     --medium-resolution: 1366px;
     --high-resolution: 1920px;
 }
-
 
 @font-face {
     font-family: 'Comic Sans MS';
@@ -111,7 +109,7 @@ body {
 .clock-container.inset-shadow {
     color: transparent;
     background: Gray;
-    text-shadow: rgba(255, 255, 255, 0.4) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
+    text-shadow: rgba(255, 255, 255, 0.3) 2px 2px 2px, 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 header .inset-shadow {
@@ -177,7 +175,6 @@ header {
 
 .small-header,
 .large-header {
-
     margin-top: 70px;
 }
 
@@ -248,7 +245,7 @@ header {
 }
 
 #home-content-container {
-    margin-top: 325px;
+    margin-top: 340px;
     position: relative;
 }
 
@@ -418,9 +415,10 @@ header {
 }
 
 #cv-button {
-    position: fixed;
-    right: 380px;
-    top: 320px;
+    position: absolute;
+    right: 4rem;
+    top: -50px;
+    width: 200px;
     color: Lightgray;
     background-color: black;
     opacity: 0.5;
@@ -439,6 +437,14 @@ header {
     background-color: #f1e6b2;
 }
 
+#clinical-content>div {
+    background-color: #85714d;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+}
+
 #clinical-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -447,8 +453,9 @@ header {
     font-family: 'Comic Sans MS', 'Architects Daughter';
     font-size: 1.5rem;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 200px;
     margin-bottom: 250px;
+    padding: 1rem;
 }
 
 #clinical-content h2 {
@@ -540,7 +547,7 @@ header {
     display: Inline-flex;
     padding: 4rem;
     padding-top: 0;
-    margin-top: 225px;
+    margin-top: 200px;
 }
 
 #specialized-categories {
@@ -567,6 +574,9 @@ header {
     align-items: center;
     background-color: #85714d;
     margin-right: 1rem;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 }
 
 #specialized-content #forensic img {
@@ -615,6 +625,9 @@ header {
     align-items: center;
     background-color: #85714d;
     margin-right: 1rem;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 
 }
 
@@ -636,6 +649,12 @@ header {
     margin-top: 1rem;
 }
 
+.hover-box {
+    -webkit-transition: color linear 500ms, background-color linear 500ms;
+    -o-transition: color linear 500ms, background-color linear 500ms;
+    transition: color linear 500ms, background-color linear 500ms;
+}
+
 #specialized-content #presentations .hover-box:hover {
     background-color: white;
 }
@@ -653,6 +672,10 @@ header {
     align-items: center;
     Width: 30%;
     background-color: #85714d;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+
 }
 
 #specialized-content #consultation h3 {
@@ -762,15 +785,103 @@ header {
     display: -ms-flexbox;
     display: flex;
     background-color: #F1E6B2;
-    height: 768px;
 }
 
-#RadioShow .content-container {}
+#RadioShow .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    margin-top: 155px;
+}
 
-#RadioShow .content-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#RadioShow .content-container>h3 {
+    /*font-family: 'Comic Sans MS', 'Architects Daughter';*/
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+#RadioShow .content-container>p {
+    font-family: Times, serif;
+    font-size: 1.25rem;
+    color: black;
+    text-align: justify;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+}
+
+#RadioShow .content-container>p a {
+    color: #8c2633;
+}
+
+#RadioShow>div>div>div img {
+    -webkit-transition: background-color linear 500ms;
+    -o-transition: background-color linear 500ms;
+    transition: background-color linear 500ms;
+}
+
+#RadioShow>div>div>div img:hover {
+    background-color: white;
+}
+
+.audio-container {
+    width: 25%;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
+    background-color: #85714d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 16px;
+    padding: 10px;
+}
+
+.audio-container h3 {
+    text-align: center;
+    color: black;
+    color:#f1e6b2;
+    font-size: 1.25rem;
+}
+
+.audio-container p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: justify;
+    color: black;
+    text-indent: 2rem;
+}
+
+.audio-container img {
+    border-radius: 4px;
 }
 
 #YouthMentalHealth {
@@ -792,7 +903,7 @@ header {
     display: flex;
     padding: 4rem;
     padding-bottom: 10rem;
-    margin-top: 200px;
+    margin-top: 155px;
 }
 
 #YouthMentalHealth #juvenile-content-container #preparing-for-college {
@@ -810,11 +921,14 @@ header {
     text-align: justify;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #85714D
+    background-color: #85714D;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 }
 
 #YouthMentalHealth #juvenile-content-container #preparing-for-college img {
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
@@ -864,9 +978,18 @@ header {
     margin: 0 auto;
     padding: 2rem;
     margin-right: 2rem;
-    background-color: #85714D
+    background-color: #85714D;
+    -webkit-box-shadow: 4px 4px 15px 2px black;
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 8px;
 }
 
+/*
+#YouthMentalHealth #juvenile-content-container #avoiding-detention:hover {
+    background-color: white;
+    cursor: pointer;
+}
+*/
 #YouthMentalHealth #juvenile-content-container #avoiding-detention img {
     width: 400px;
     height: auto;
@@ -976,7 +1099,6 @@ header {
 #Contact #contact-container #provisional-text {
     font-family: 'Comic Sans MS', 'Architects Daughter';
     color: #F1E6B2;
-
     font-size: 1.25rem;
     position: absolute;
     top: 100px;
@@ -987,7 +1109,6 @@ header {
     background-color: rgba(52, 123, 33, 0.0);
     padding: 1rem;
     border-radius: 4px;
-
 }
 
 #Contact #contact-container #contact-text {
@@ -1041,7 +1162,6 @@ header {
 
 #contact-container #contact-text a {
     color: #F1E6B2;
-
 }
 
 .clock-container {
@@ -1056,9 +1176,18 @@ header {
 }
 
 .clock-container h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+footer > a {
+    color: inherit;
+    line-height: 2rem;
+    margin-left: 2rem;
+}
+
+footer > div > h2 {
+    margin-right: 0.25rem;
 }
 
 #diffuser {
