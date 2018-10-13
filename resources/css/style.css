@@ -591,7 +591,6 @@ header {
     background-color: #85714d;
     box-shadow: 4px 4px 15px 2px black;
     border-radius: 8px;
-
 }
 
 #specialized-content #consultation h3 {
@@ -621,6 +620,7 @@ header {
 
 #specialized-content #consultation img {
     width: 200px;
+    border-radius: 50%;
 }
 
 #specialized-content #consultation .hover-box:hover {
@@ -727,7 +727,7 @@ header {
 #RadioShow .content-container>p a {
     color: #8c2633;
 }
-
+/*
 #RadioShow>div>div>div img {
     transition: background-color linear 500ms;
 }
@@ -735,7 +735,7 @@ header {
 #RadioShow>div>div>div img:hover {
     background-color: white;
 }
-
+*/
 .audio-container {
     width: 25%;
     box-shadow: 4px 4px 15px 2px black;
@@ -767,6 +767,9 @@ header {
 
 .audio-container img {
     border-radius: 4px;
+    width: 150px;
+    height: auto;
+    border-radius: 75px;
 }
 
 #YouthMentalHealth {

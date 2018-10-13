@@ -11,7 +11,7 @@
     <title>Adrienne C Davis, PhD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style-dist.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css" />
     <link rel="icon" href="./ms-icon-310x310.png" type="image/x-icon">
 </head>
 
@@ -61,7 +61,7 @@
                         <source src="./resources/media/video/slideshow.mp4" type="video/mp4">
                         <source src="./resources/media/video/slideshow.webm" type="video/webm">
                         <source src="./resources/media/video/slideshow.ogv" type="video/ogg">
-                            <source src="./resources/media/video/small-slideshow.mp4" type="video/mp4">
+                        <source src="./resources/media/video/small-slideshow.mp4" type="video/mp4">
                         Your user agent does not support the HTML 5 video element
                     </video>
 
@@ -526,100 +526,95 @@
                 </p>
 
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 0 auto;">
-                    <div class="audio-container">
-                        <h3>Understanding Mental Health & Mental Illness</h3>
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
-                            style="width: 150px; height: auto;">
+                    <div id="audio-container-1" class="audio-container">
+                        <h3 id="title-1" >Understanding Mental Health & Mental Illness</h3>
+                        <img id="icon-1" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png"
+                            alt="A microphone">
                         <!--
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus et erat fringilla
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
-                            <source src="./resources/media/audio/first-15-minute-mental-health-moment.mp3" type="audio/mpeg">
-                            Your browser does not support
-                            the audio element.
+                        <audio id="program-1" controls style="width: 100%;" onplay="toggleBackground('audio-container-1', 'title-1', 'icon-1')" onpause="pauseAudio('audio-container-1', 'title-1', 'icon-1')" onended="endAudio('audio-container-1', 'title-1', 'icon-1')">
+                        <source src="./resources/media/audio/first-15-minute-mental-health-moment.mp3" type="audio/mpeg">
+                        Your browser does not support
+                        the audio element.
                         </audio>
                     </div>
 
+                    <div id="audio-container-2" class="audio-container">
+                        <h3 id="title-2">Myths & Fallacies About Psychotherapy</h3>
 
-                    <div class="audio-container">
-                        <h3>Myths & Fallacies About Psychotherapy</h3>
-
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
-                            style="width: 150px; height: auto;">
+                        <img id="icon-2" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone">
                         <!--
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus et erat fringilla
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
+                        <audio controls style="width: 100%;" onplay="toggleBackground('audio-container-2', 'title-2', 'icon-2')" onpause="pauseAudio('audio-container-2', 'title-2', 'icon-2')" onended="endAudio('audio-container-2', 'title-2', 'icon-2')">
                             <source src="./resources/media/audio/myths-and-fallacies-about-psychotherapy.mp3" type="audio/mpeg">
                             Your browser does not support
                             the audio element.
                         </audio>
                     </div>
 
-                    <div class="audio-container">
-                        <h3>Coping with Adversity<br><br></h3>
+                    <div id="audio-container-3" class="audio-container">
+                        <h3 id="title-3">Coping with Adversity<br><br></h3>
 
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
-                            style="width: 150px; height: auto;">
+                        <img id="icon-3" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone">
                         <!--
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus et erat fringilla
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
+                        <audio controls style="width: 100%;" onplay="toggleBackground('audio-container-3', 'title-3', 'icon-3')" onpause="pauseAudio('audio-container-3', 'title-3', 'icon-3')" onended="endAudio('audio-container-3', 'title-3', 'icon-3')">
                             <source src="./resources/media/audio/coping-with-adversity.mp3" type="audio/mpeg">
                             Your browser does not support
                             the audio element.
                         </audio>
                     </div>
-                    
-                    <div class="audio-container">
-                        <h3>Letting Go Requires Change<br><br></h3>
 
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
-                            style="width: 150px; height: auto;">
+                    <div id="audio-container-4" class="audio-container">
+                        <h3 id="title-4">Letting Go Requires Change<br><br></h3>
+
+                        <img id="icon-4" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone">
                         <!--
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus et erat fringilla
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
+                        <audio controls style="width: 100%;" onplay="toggleBackground('audio-container-4', 'title-4', 'icon-4')" onpause="pauseAudio('audio-container-4', 'title-4', 'icon-4')" onended="endAudio('audio-container-4', 'title-4', 'icon-4')">
                             <source src="./resources/media/audio/letting-go-requires-change.mp3" type="audio/mpeg">
                             Your browser does not support
                             the audio element.
                         </audio>
                     </div>
 
-                    <div class="audio-container">
-                        <h3>Maintaining a Spirit of Thanks<br><br></h3>
+                    <div id="audio-container-5" class="audio-container">
+                        <h3 id="title-5">Maintaining a Spirit of Thanks<br><br></h3>
 
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
-                            style="width: 150px; height: auto;">
+                        <img id="icon-5" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone">
                         <!--
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut purus et erat fringilla
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
+                        <audio controls style="width: 100%;" onplay="toggleBackground('audio-container-5', 'title-5', 'icon-5')" onpause="pauseAudio('audio-container-5', 'title-5', 'icon-5')" onended="endAudio('audio-container-5', 'title-5', 'icon-5')">
                             <source src="./resources/media/audio/maintaining-a-spirit-of-thanks.mp3" type="audio/mpeg">
                             Your browser does not support
                             the audio element.
                         </audio>
                     </div>
 
-                    <div class="audio-container">
-                        <h3>Family Dynamics during the Holiday Season</h3>
+                    <div id="audio-container-6" class="audio-container">
+                        <h3 id="title-6">Family Dynamics during the Holiday Season</h3>
 
-                        <img src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
+                        <img id="icon-6" src="./resources/media/images/vintage-radio-microphone-with-background-removed.png" alt="A microphone"
                             style="width: 150px; height: auto;">
                         <!--
                         <p>
@@ -627,7 +622,7 @@
                             luctus. Aenean imperdiet tellus massa, eleifend feugiat neque rutrum quis.
                         </p>
                         -->
-                        <audio controls style="width: 100%;">
+                        <audio controls style="width: 100%;" onplay="toggleBackground('audio-container-6', 'title-6', 'icon-6')" onpause="pauseAudio('audio-container-6', 'title-6', 'icon-6')" onended="endAudio('audio-container-6', 'title-6', 'icon-6')">
                             <source src="./resources/media/audio/family-dynamics-during-the-holiday-season.mp3" type="audio/mpeg">
                             Your browser does not support
                             the audio element.
@@ -895,7 +890,6 @@
             <!--Start of CuterCounter Code -->
             <div style="display: flex; margin-right: 2rem;">
                 <h2>Visitors:</h2>
-                
                 <img src="http://www.cutercounter.com/hit.php?id=guaapqq&nd=6&style=26" border="0" alt="Visitor Counter">
             </div>
             <!--End of CuterCounter Code-->
@@ -905,6 +899,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./resources/scripts/datetime.js"></script>
     <script src="./resources/scripts/browserdetect.js"></script>
+    <script src="./resources/scripts/audioenhancements.js"></script>
 
     <script>
         window.onload = date_time('date_time');
