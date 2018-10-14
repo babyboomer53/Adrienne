@@ -696,10 +696,6 @@ header {
 }
 
 #RadioShow .content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     padding: 4rem;
     margin-top: 155px;
@@ -713,7 +709,6 @@ header {
     text-align: center;
     margin-bottom: 1rem;
 }
-
 
 #RadioShow .content-container>p {
     font-family: Times, serif;
@@ -741,10 +736,6 @@ header {
     box-shadow: 4px 4px 15px 2px black;
     border-radius: 8px;
     background-color: #85714d;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
     margin: 16px;
     padding: 10px;
 }
@@ -766,10 +757,11 @@ header {
 }
 
 .audio-container img {
-    border-radius: 4px;
+    display: block;
     width: 150px;
     height: auto;
-    border-radius: 75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #YouthMentalHealth {

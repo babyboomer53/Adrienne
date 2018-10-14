@@ -12,8 +12,8 @@ function toggleBackground(audioContainer, title, icon) {
 }
 
 function pauseAudio(audioContainer, title, icon) {
-  var c = document.getElementById(audioContainer);
-  var t = document.getElementById(title);
+  var c = document.getElementById(audioContainer); // Not used
+  var t = document.getElementById(title); // Not used
   var i = document.getElementById(icon);
     i.src =
       "./resources/media/images/vintage-radio-microphone-with-black-text.png";
