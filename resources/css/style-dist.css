@@ -675,7 +675,6 @@ header {
     -webkit-box-shadow: 4px 4px 15px 2px black;
     box-shadow: 4px 4px 15px 2px black;
     border-radius: 8px;
-
 }
 
 #specialized-content #consultation h3 {
@@ -707,6 +706,7 @@ header {
 
 #specialized-content #consultation img {
     width: 200px;
+    border-radius: 50%;
 }
 
 #specialized-content #consultation .hover-box:hover {
@@ -788,19 +788,6 @@ header {
 }
 
 #RadioShow .content-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     width: 100%;
     padding: 4rem;
     margin-top: 155px;
@@ -815,7 +802,6 @@ header {
     margin-bottom: 1rem;
 }
 
-
 #RadioShow .content-container>p {
     font-family: Times, serif;
     font-size: 1.25rem;
@@ -828,35 +814,21 @@ header {
 #RadioShow .content-container>p a {
     color: #8c2633;
 }
-
+/*
 #RadioShow>div>div>div img {
-    -webkit-transition: background-color linear 500ms;
-    -o-transition: background-color linear 500ms;
     transition: background-color linear 500ms;
 }
 
 #RadioShow>div>div>div img:hover {
     background-color: white;
 }
-
+*/
 .audio-container {
     width: 25%;
     -webkit-box-shadow: 4px 4px 15px 2px black;
     box-shadow: 4px 4px 15px 2px black;
     border-radius: 8px;
     background-color: #85714d;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     margin: 16px;
     padding: 10px;
 }
@@ -881,7 +853,11 @@ header {
 }
 
 .audio-container img {
-    border-radius: 4px;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #YouthMentalHealth {
