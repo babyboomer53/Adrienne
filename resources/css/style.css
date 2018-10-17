@@ -1015,10 +1015,11 @@ header {
 
 .clock-container h2 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 footer > a {
+    font-size: 1.5rem! Important;
     color: inherit;
     line-height: 2rem;
     margin-left: 2rem;
@@ -1026,6 +1027,10 @@ footer > a {
 
 footer > div > h2 {
     margin-right: 0.25rem;
+}
+
+#calendar-clock {
+    font-weight: 200;
 }
 
 #diffuser {
