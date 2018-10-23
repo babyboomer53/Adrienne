@@ -10,7 +10,7 @@
             x[i].classList.add("inset-shadow");
         }
         var i;
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < y.length; i++) {
             y[i].classList.add("inset-shadow");
         }
     } else {
@@ -19,7 +19,7 @@
             x[i].classList.add("alt-shadow");
         }
         var i;
-        for (i = 0; i < x.length; i++) {
+        for (i = 0; i < y.length; i++) {
             y[i].classList.add("alt-shadow");
         }
     }
