@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="architects-daughter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resources/fonts/architects-daughter.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
