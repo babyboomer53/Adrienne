@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style-dist.css" />
-    <link rel="icon" href="./ms-icon-310x310.png" type="image/x-icon"/>
+    <link rel="icon" href="./ms-icon-310x310.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -1100,7 +1100,7 @@
                     <p>
                         Department of Children & Family Services <strong>(877) 423-4746</strong><br>
                         National Institute of Mental Health: <strong>(866) 615-6464</strong><br>
-                        National Mental Health Hotline <strong>9-8-8</strong>
+                        National Mental Health Hotline <blink><strong>9-8-8</strong></blink>
                     </p>
                 </div>
             </div>
@@ -1132,6 +1132,17 @@
         window.onload = date_time('date_time');
     </script>
 
+    <script>
+        const blinks = document.querySelectorAll('blink');
+        const interval = 500; // ms
+        let tId = setInterval(() => {
+            blinks.forEach(blink => {
+                let vis = blink.style.visibility;
+                blink.style.visibility = vis === 'visible' ? 'hidden' : 'visible';
+            });
+        }, interval)
+    </script>
+    
     <script>
         function openPage(pageName, elmnt, foreground, background) {
             // Hide all elements with class="tabcontent" by default */
